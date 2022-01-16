@@ -1,0 +1,40 @@
+package quiz;
+import java.util.Scanner;
+public class Quiz2Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Enter the number of items: 5
+		//Enter the value of all items (separated by space): 7 4 3 0 7
+		//0: *******(7)
+		//1: ****(4)
+		//2: ***(3)
+		//3: (0)
+		//4: *******(7)
+		Scanner sc = new Scanner (System.in);
+		
+		
+		System.out.print("Enter the number of items : ");
+		int j = sc.nextInt();
+		
+		System.out.print("Enter the value of all items : ");
+		int a[]=new int[j];		
+		for(int i=0;i<a.length;i++)
+		a[i] = sc.nextInt();
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(i + ":");
+			for(int x = 0; x < a[i]; x++)
+			{
+				System.out.print("*");
+			}
+			System.out.print("(" + a[i] + ")");
+			System.out.println();
+		
+		}
+		
+		
+		
+	}
+
+}
