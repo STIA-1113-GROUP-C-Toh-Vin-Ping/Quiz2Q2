@@ -29,12 +29,7 @@ public class Quiz2Q2 {
 		System.out.print("*");
 		}
 		System.out.print("(" + a[i] + ")");
-		System.out.println();
-		
-		}
-		
-		
-		
+		System.out.println();		
+		}						
 	}
-
 }
